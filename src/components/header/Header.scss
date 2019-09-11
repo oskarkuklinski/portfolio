@@ -1,0 +1,36 @@
+@import "../../variables.scss";
+@import "../../_mixins.scss";
+
+.Header {
+    background-color: $black;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        li {
+            margin-left: 10%;
+            margin-right: 10%;
+            
+            .Header-link {
+                text-decoration: none;
+                color: $white;
+                @include transition(color .4s ease);
+                
+                &:hover {
+                    color: $grey
+                }
+            }
+            
+            .Header-active {
+                color: $grey;
+            }
+        }
+    }
+}

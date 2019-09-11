@@ -1,0 +1,76 @@
+@import "../../variables.scss";
+@import "../../_mixins.scss";
+
+.container {
+    @include container;
+    
+    .Resume-left, .Resume-right {
+        @include half-sections;
+    }
+    
+    .Resume-left {
+        background-color: $white;
+        color: $black;
+    }
+    
+    .Resume-right {
+        background-color: $pink;
+        color: $black;
+    }
+    
+    .Resume-button {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        // Brackets animation
+        .Resume-category {
+            font-size: 2rem;
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            
+            &:before, &:after {
+                position: absolute;
+                opacity: 0;
+                font-size: 2rem;
+                top: 0px;
+                @include transition(all 0.3s ease);
+            }
+            
+            &:before {
+                content: '<';
+                left: 0px;
+                transform: translateX(1rem);
+            }
+            
+            &:after {
+                content: "/>";
+                right: 0px;
+                transform: translateX(-1rem);
+            }
+            
+            &:hover:before {
+                opacity: 1;
+                transform: translateX(-1.5rem);
+            }
+            
+            &:hover:after {
+                opacity: 1;
+                transform: translateX(2.25rem);
+            }
+        }
+        
+        .Resume-content {
+            display: flex;
+            flex-direction: column;
+            font-size: 0.75rem;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    }
+}
