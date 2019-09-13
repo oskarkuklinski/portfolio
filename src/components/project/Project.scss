@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.Project-container {
+    display: flex;
+    flex: 1 0 25%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.75rem;
+    max-width: 25%;
+    height: 40%;
+    background-color: rgb(250,250,250);
+    margin: 1%;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(164,164,164,1);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(164,164,164,1);
+    box-shadow: 0px 0px 2px 0px rgba(164,164,164,1);
+    
+    .Project-link {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: $black;
+        
+        img {
+            width: 100%;
+            height: 70%;
+        }
+
+        span {
+            height: 30%;
+            padding-top: 5%;
+            font-size: 1rem;
+        }
+    }
+}

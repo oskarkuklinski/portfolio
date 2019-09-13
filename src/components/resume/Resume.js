@@ -29,7 +29,7 @@ class Resume extends React.Component {
     render() {
         console.log(this.state);
         return (
-            <div className="container">
+            <div className="Resume-container">
                 <div className="Resume-left">
                     <div className="Resume-button">
                         <a onClick={this.handleClick} id="personal-projects" className={(this.state.categoryPressed == "" || this.state.categoryPressed == "personal-projects") ? "Resume-category" : "hidden"}>Personal Projects</a>

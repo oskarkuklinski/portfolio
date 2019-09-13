@@ -1,4 +1,4 @@
-let resumeData = {
+const resumeData = {
     name: "Oskar Kuklinski",
     role: "FrontEnd Developer",
     city: "Edinburgh"

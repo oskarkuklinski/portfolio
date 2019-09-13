@@ -1,20 +1,17 @@
 @import "../../variables.scss";
 @import "../../_mixins.scss";
 
-.container {
+.Portfolio-container {
     @include container;
     
-    .Portfolio-left, .Portfolio-right {
-        @include half-sections;
-    }
-    
-    .Portfolio-left {
-        background-color: $pink;
-        color: $black;
-    }
-    
-    .Portfolio-right {
-        background-color: $white;
-        color: $black;
+    .Portfolio-showcase {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: row;
     }
 }
