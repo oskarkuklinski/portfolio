@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 10vh;
     
     .ProjectPage-holder {
         width: 80%;
@@ -34,5 +35,6 @@
     .ProjectPage-embed {
         width: 75%;
         height: 60%;
+        margin-bottom: 2rem;
     }
 }

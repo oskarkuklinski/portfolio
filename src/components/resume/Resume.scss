@@ -4,8 +4,21 @@
 .Resume-container {
     @include container;
     
+    @include tablet {
+        flex-direction: column;
+        padding-bottom: 10vh;
+    }
+    
     .Resume-left, .Resume-right {
         @include half-sections;
+        
+        @include tablet {
+            width: 100%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     
     .Resume-left {
@@ -25,9 +38,14 @@
         flex-direction: column;
         align-items: center;
         
+        @include tablet {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        
         // Brackets animation
         .Resume-category {
-            font-size: 2rem;
+            font-size: 1.75rem;
             position: relative;
             cursor: pointer;
             display: flex;

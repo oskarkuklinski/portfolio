@@ -12,7 +12,7 @@ class About extends React.Component {
                 </div>
                 <div className="About-right">
                     <img src={profilePhoto}></img>
-                    <h3>Recent graduate with an ambitious drive to gain experience in developing innovative and creative web and mobile solutions. When I'm not coding, you'll find me creating workout plans, planning backpacking adventures and learning new languages</h3>
+                    <h3>Recent graduate with an ambitious drive to gain experience in developing innovative and creative web and mobile solutions. When I'm not coding, you'll find me creating workout plans, planning backpacking adventures and learning new languages.</h3>
                 </div>
             </div>
         );
