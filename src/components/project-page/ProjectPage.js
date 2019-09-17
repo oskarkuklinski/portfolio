@@ -12,7 +12,6 @@ const ProjectPage = (props) => {
                 </div>
             </div>
             <p>{props.data.desc}</p>
-            <div className="ProjectPage-embed" dangerouslySetInnerHTML={{__html: props.data.embed}}></div>
             { (props.data.embed != undefined) ? <div className="ProjectPage-embed" dangerouslySetInnerHTML={{__html: props.data.embed}}></div> : <a href={props.data.link} target="_blank">link</a> }
         </div>
     );
