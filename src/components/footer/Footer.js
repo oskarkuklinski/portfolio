@@ -3,14 +3,14 @@ import "./Footer.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faFacebook, faCodepen } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const Footer = () => {
     // Hooks
     const [copyMessage, setCopyMessage] = useState("Copy my e-mail address to your clipboard");
     
     const copyToClipboard = () => {
-        navigator.clipboard.writeText("osio.kuklinski@gmail.com");
-        setCopyMessage('Copied!')
+        setCopyMessage('Copied! ✌');
     }
     
     const refreshMessage = () => {
@@ -22,9 +22,11 @@ const Footer = () => {
         <div className="Footer">
             <p>drop me a message</p>
             <div>
-                <a onClick={copyToClipboard} onMouseLeave={refreshMessage} data-tip={copyMessage}>
-                    <FontAwesomeIcon className="Footer-icon" icon={faEnvelope} />
-                </a>
+                <CopyToClipboard text="osio.kuklinski@gmail.com">
+                    <a onClick={copyToClipboard} onMouseLeave={refreshMessage} data-tip={copyMessage}>
+                        <FontAwesomeIcon className="Footer-icon" icon={faEnvelope} />
+                    </a>
+                </CopyToClipboard>
                 <a href="https://www.linkedin.com/in/oskar-kuklinski-a63019171/" target="_blank" data-tip="Connect with me on LinkedIn">
                     <FontAwesomeIcon className="Footer-icon" icon={faLinkedin} />
                 </a>

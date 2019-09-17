@@ -58,6 +58,13 @@
                 }
             }
             
+            // exception for the e-mail tooltip
+            &:first-child:before {
+                @include phone {
+                    display: block;
+                }
+            }
+            
             &:hover {
                 &:before {
                     opacity: 1;
