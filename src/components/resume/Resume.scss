@@ -85,6 +85,10 @@
             display: flex;
             flex-direction: column;
             font-size: 0.75rem;
+            
+            .skill-box, .language-box, .interest-box {
+                margin-top: 0.5rem;
+            }
         }
         
         .hidden {

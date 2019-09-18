@@ -112,9 +112,9 @@ class Resume extends React.Component {
                     <div className="Resume-button">
                         <a onClick={this.handleClick} id="languages" className={(this.state.categoryPressed == "" || this.state.categoryPressed == "languages") ? "Resume-category" : "hidden"}>Languages</a>
                         <section className={(this.state.categoryPressed !== "languages") ? "hidden" : "Resume-content"}>
-                            <div className="language-box"><span>Polish (native)</span><span>Native or Bilingual Proficiency</span></div>
-                            <div className="language-box"><span>English</span><span>Full Professional Proficiency</span></div>
-                            <div className="language-box"><span>Spanish</span><span>Elementary Proficiency</span></div>
+                            <div className="language-box"><span>Polish - </span><span>Native</span></div>
+                            <div className="language-box"><span>English - </span><span>Full Professional Proficiency</span></div>
+                            <div className="language-box"><span>Spanish - </span><span>Elementary Proficiency</span></div>
                         </section>
                     </div>
                     <div className="Resume-button">
@@ -123,7 +123,7 @@ class Resume extends React.Component {
                             <div className="interest-box"><span>Bodybuilding (creating workout and diet plans)</span></div>
                             <div className="interest-box"><span>Traveling (backpacking, immersing in new cultures)</span></div>
                             <div className="interest-box"><span>Languages (nailing Duolingo levels)</span></div>
-                            <div className="interest-box"><span>Drinking Tea</span></div>
+                            <div className="interest-box"><span>Hiking</span></div>
                         </section>
                     </div>
                 </div>

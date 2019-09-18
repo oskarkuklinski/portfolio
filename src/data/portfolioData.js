@@ -8,7 +8,7 @@ const portfolioData = [
         img: restaurantApp,
         title: "Restaurant Ordering Application",
         url: "/portfolio/restaurant-app",
-        desc: "An application to order food to the table inside the restaurant",
+        desc: "A mobile application to order food to the table inside the restaurant. User picks a table number and its navigated to the menu page with drop-down categories and food options presenting prices and descriptions. Options on the menu can be added to the basket that holds quantities and details of chosen items. All the items from the basket can be later seen in the summary screen where user can change quantities of each product or remove them. The application was inspired by the Wetherspoon app.",
         tools: [
             "React Native", "Expo", "CSS", "Redux", "NPM",
         ],
@@ -19,7 +19,7 @@ const portfolioData = [
         img: ecommerceUI,
         title: "E-commerce User Interface",
         url: "/portfolio/ecommerce-ui",
-        desc: "User Interface for the e-commerce sneaker store with a basket function",
+        desc: "User Interface for the e-commerce sneaker store with a cart function. User can browse and add items to the cart. All the added items can be later viewed by clicking on the cart item that displays an overlay with the order summary (quantities, price, total price).",
         tools: [
             "React.js", "CSS",
         ],
@@ -34,7 +34,7 @@ const portfolioData = [
         img: movieFinder,
         title: "Movie Finder",
         url: "/portfolio/movie-finder",
-        desc: "An application to find a movie by a keyword or title by using MovieDB API.",
+        desc: "An application to find a movie by a keyword or a title with MovieDB API. User can enter any keyword in the text field and on the search button four movie options will be presented. All the options are clickable and will display an overlay with a movie poster, title, date of release and description.",
         tools: [
             "JavaScript", "JQuery", "HTML", "Pug.js", "CSS",
         ],
@@ -49,7 +49,7 @@ const portfolioData = [
         img: portfolioImg,
         title: "This Portfolio 🤷‍♂️",
         url: "/portfolio/this-portfolio",
-        desc: "A portfolio application built with React.js and SCSS",
+        desc: "A portfolio application built with React.js and SCSS. This is a showcase of my most recent projects that I was working on together with my resume to show myself to the potential employers!",
         tools: [
             "React.js", "CSS", "SCSS",
         ],

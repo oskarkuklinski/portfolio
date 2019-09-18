@@ -6,7 +6,7 @@ const Project = (props) => {
     return (
         <div className="Project-container">
             <NavLink className="Project-link" exact={true} activeClassName="Header-active" to={props.data.url}>
-                <img src={props.data.img}></img>
+                <img alt={props.data.title} src={props.data.img}></img>
                 <span>{props.data.title}</span>
             </NavLink>
         </div>

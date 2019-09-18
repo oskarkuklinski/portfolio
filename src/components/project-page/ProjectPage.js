@@ -10,8 +10,8 @@ const ProjectPage = (props) => {
                 <div className="ProjectPage-toolholder">
                     {props.data.tools.map((tool, key) => { return <div key={key} className="ProjectPage-tool"><span>{tool}</span></div> })}
                 </div>
+                <p>{props.data.desc}</p>
             </div>
-            <p>{props.data.desc}</p>
             { (props.data.embed != undefined) ? <div className="ProjectPage-embed" dangerouslySetInnerHTML={{__html: props.data.embed}}></div> : <a href={props.data.link} target="_blank">link</a> }
         </div>
     );
